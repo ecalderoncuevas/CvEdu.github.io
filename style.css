@@ -1,0 +1,307 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #2c3e50; /* Fondo medianoche */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header {
+    background-color: #34495e; /* Color de fondo sólido */
+    padding: 20px; /* Ajustado el padding */
+    margin-bottom: 40px;
+    border-radius: 20px; /* Bordes más redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    position: relative;
+    background-image: url('png.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Estilo del texto y contenido del header */
+header h1 {
+    font-size: 70px;
+    font-weight: 600;
+    color:  rgba(0, 0, 0, 0.7);
+    background-color:rgba(142, 68, 173, 0.5); 
+    padding: 10px;
+    border-radius: 5%;
+}
+
+header p {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px; /* Aumento del margen superior para separar el párrafo del título */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+  /* Fondo translúcido */
+    padding: 10px 15px; /* Ajuste al tamaño del contenido */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Sección de Datos Personales */
+#datos-personales {
+    background-color: rgba(142, 68, 173, 0.3); /* Morado más transparente y suave */
+    padding: 20px; /* Menos relleno para un ajuste más justo */
+    border-radius: 20px; /* Bordes más redondeados */
+    margin-top: 20px;
+    position: relative;
+    z-index: 1; /* Aseguramos que el texto esté sobre la imagen */
+    display: inline-block; /* Ajuste del tamaño al contenido */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+#datos-personales a {
+    color: #fff; /* Color morado */
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#datos-personales a:hover {
+    background-color: #8e44ad;
+    color: #fff; /* Texto blanco cuando pasa el cursor */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para los elementos dentro de los Datos Personales */
+#datos-personales li {
+    background-color: rgba(142, 68, 173, 0.2); /* Fondo morado suave */
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #8e44ad; /* Borde morado */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Transición suave */
+    margin-bottom: 10px; /* Espaciado entre los elementos */
+    display: inline-block; /* Ajuste al tamaño del contenido */
+    width: auto; /* Deja que el ancho se ajuste al contenido */
+}
+
+/* Efecto de resalto y agrandamiento cuando el cursor pasa por encima del teléfono */
+#datos-personales li:hover {
+    background-color: #8e44ad; /* Fondo morado más intenso */
+    color: white; /* El texto se pone blanco al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al hacer hover */
+    cursor: pointer; /* Indicador de interacción */
+    transform: scale(1.05); /* Aumentar el tamaño del teléfono */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
+}
+
+/* Contenedor de Secciones */
+.secciones-container {
+    display: flex;
+    flex-direction: column; /* Apila las filas verticalmente */
+    gap: 40px;
+    width: 100%;
+    
+}
+
+/* Fila 1: Estudios, Otros Estudios, Competencias */
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Fila 2: Conocimientos y Experiencia, ¿Por qué trabajar en Apple? */
+.row-2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-left: 280px;
+    margin-right: 90px;
+    margin-top: -802px;
+
+}
+
+/* Secciones dentro de las filas */
+section {
+    background-color: rgba(142, 68, 173, 0.2); /* Fondo morado suave */
+    padding: 30px;
+    border-radius: 20px; /* Bordes más redondeados */
+    border: 2px solid #8e44ad; /* Borde morado */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Transición suave */
+    flex: 1; /* Cada sección ocupa el mismo espacio */
+    box-sizing: border-box;
+    margin-top: 20px;
+    min-width: 280px;
+}
+
+/* Efecto de resalto y agrandamiento cuando el cursor pasa por encima de las secciones */
+section:hover {
+    background-color: #8e44ad; /* Fondo morado más intenso */
+    color: white; /* El texto se pone blanco al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al hacer hover */
+    cursor: pointer; /* Indicador de interacción */
+    transform: scale(1.05); /* Aumentar el tamaño de la sección */
+}
+
+/* Asegurar que los párrafos dentro de las secciones tengan color blanco */
+section p {
+    color: #fff; /* Texto blanco */
+}
+
+/* Títulos dentro de las secciones */
+section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section li {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 12px;
+}
+
+section a {
+    color: #8e44ad; /* Tono morado metálico */
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+    color: #9b59b6; /* Sombra más clara del tono morado */
+}
+
+/* Estilo del botón */
+button {
+    background-color: #8e44ad; /* Tono morado metálico */
+    color: white;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Sección de ¿Quién soy? */
+#quien-soy {
+    background-color: rgba(142, 68, 173, 0.3); /* Fondo morado suave */
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+#quien-soy img {
+    width: 50%;  /* Ajusta el tamaño de la imagen al 50% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 300px; /* Tamaño máximo para la imagen */
+    margin: 20px auto; /* Centra la imagen */
+    border-radius: 10%;
+    display: block; /* Asegura que la imagen se comporta como un bloque */
+}
+
+#quien-soy h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#quien-soy p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+#mensaje {
+    display: flex;
+    align-items: center;
+    background-color: #000000; /* Fondo oscuro para resaltar el texto */
+    color: white;
+    padding: 2px; /* Ajustamos el padding para que no sea tan grande */
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 30%; /* Limitar el ancho máximo */
+    width: auto; /* El ancho se ajustará al contenido */
+    margin: 10px auto; /* Centra el mensaje */
+    text-align: center; /* Centra el texto */
+}
+
+#mensaje img {
+    width: 90px;
+    height: 90px;
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+}
+
+#miBoton {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #9b59b6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#miBoton:hover {
+    background-color: #9b59b6;
+}
+
+/* Estilo del nuevo botón de disponibilidad */
+#miBotonDisponibilidad {
+    background-color: #3498db; /* Azul claro */
+    color: white;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#miBotonDisponibilidad:hover {
+    background-color: #2980b9; /* Azul más oscuro al hacer hover */
+}
+
+/* Estilo del mensaje de disponibilidad */
+#mensajeDisponibilidad {
+    background-color: #1abc9c; /* Fondo verde claro */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: 0;
+    width: 999px;
+}
+
+#mensajeDisponibilidad p {
+    margin: 10px 0;
+    font-weight: 900;
+}
+

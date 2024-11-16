@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenido a mi currículum interactivo!</h1>
+        <p>Bienvenido a mi página de currículum. Aquí podrás explorar en detalle mi información, habilidades y experiencia profesional, así como las razones por las que me gustaría formar parte del equipo de Apple.</p>
+        
+        <section id="datos-personales">
+            <h2>Datos Personales</h2>
+            <ul>
+                <li>Email: <a href="mailto:ceducalderon@gmail.com">ceducalderon@gmail.com</a></li>
+                <li>Teléfono: +34 615 72 00 83</li>
+                <li>Dirección: Av.Mistral 24-26, Barcelona, España</li>
+                <li><a href="https://www.linkedin.com/in/edu-calderón-9bb648277/" target="_blank">Mi LinkedIn</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        
+        <!-- Contenedor de secciones -->
+        <div class="secciones-container">
+            <!-- Nueva sección ¿Quién Soy? -->
+            <div class="row-1">
+                <section id="quien-soy">
+                    <h2>¿Quién Soy?</h2>
+                    <div class="perfil-container">
+                        <img src="edu.jpeg" alt="Foto">
+                        <p>Soy una persona apasionada por la tecnología y el ecosistema Apple, con un firme compromiso de ofrecer experiencias memorables a cada cliente. Trabajo con entusiasmo en equipo, superando desafíos y adaptándome a diferentes situaciones para alcanzar objetivos comunes. Mi meta no es solo crecer profesionalmente, sino también ayudar a los clientes a descubrir cómo la tecnología de Apple puede transformar sus vidas, siempre con empatía, excelencia y atención al detalle.</p>
+                    </div>
+                </section>
+
+                <a href="estudios.html">
+                    <section id="estudios">
+                        <h2>Estudios</h2>
+                        <ul>
+                            <li>Licenciatura en Informática (SMX)</li>
+                            <li>Actual estudiante de DAM (Desarrollo de Aplicaciones Multiplataforma)</li>
+                        </ul>
+                    </section>
+                </a>
+                <a href="otros_estudios.html">
+                    <section id="otros-estudios">
+                        <h2>Otros Estudios</h2>
+                        <ul>
+                            <li>Idiomas</li>
+                        </ul>
+                    </section>
+                </a>
+                <a href="competencias.html">
+                    <section id="competencias-habilidades">
+                        <h2>Competencias y Habilidades Personales</h2>
+                        <ul>
+                            <li>Sobre Mí</li>
+                            <li>Habilidades técnicas/personales</li>
+                        </ul>
+                    </section>
+                </a>
+            </div>
+            <div class="row-2">
+                <a href="experiencia.html">
+                    <section id="conocimientos-experiencia">
+                        <h2>Conocimientos y Experiencia</h2>
+                        <ul>
+                            <li>Desarrollo de páginas web</li>
+                            <li>Amplia experiencia colaborando eficazmente en equipos.</li>
+                        </ul>
+                    </section>
+                </a>
+                <a href="motivo.html">
+                    <section id="por-que-apple">
+                        <h2>¿Qué me motiva a trabajar en Apple?</h2> 
+                    </section>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón original -->
+    <button id="miBoton">Haz clic aquí</button>
+
+        <!-- Contenedor para el mensaje original -->
+    <div id="mensaje" style="display: none;">
+        ¡Gracias por visitar mi CV interactivo!
+        <img src="edu2.jpeg" alt="Logo de Apple">
+    </div>
+
+    <!-- Nuevo botón para disponibilidad -->
+<button id="miBotonDisponibilidad">Mi Disponibilidad</button>
+
+<!-- Contenedor para el mensaje de disponibilidad -->
+<div id="mensajeDisponibilidad" style="display: none;">
+    <p>Estoy muy entusiasmado por la oportunidad de trabajar en la Apple Store como Especialista. Aunque mi disponibilidad es limitada, me comprometo a dar lo mejor de mí y contribuir al equipo:</p>
+    <p>- Mi disponibilidad es principalmente los fines de semana.</p>
+    <p>- Puedo trabajar los viernes por la tarde.</p>
+    <p>- Estoy disponible todo el día sábado.</p>
+    <p>- Además, estoy dispuesto a trabajar en días festivos y durante las vacaciones, siempre que sea necesario.</p>
+    <p>¡Estoy deseando formar parte del equipo y aportar mi energía y motivación al trabajo en Apple!</p>
+</div>
+
+
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+    <script src="disp.js"></script>
+</body>
+</html>

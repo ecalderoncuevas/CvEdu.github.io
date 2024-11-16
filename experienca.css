@@ -1,0 +1,157 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #2c3e50; /* Fondo medianoche */
+    color: #fff; /* Color de texto blanco */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 55px;
+    color: #fff; /* Título en blanco */
+}
+
+/* Botón de Volver al inicio */
+.boton-volver {
+    background-color: #8e44ad; /* Morado */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.boton-volver:hover {
+    background-color: #9b59b6; /* Ligeramente más claro */
+    transform: scale(1.1); /* Hace que se agrande */
+    cursor: pointer; /* Indicador de interacción */
+}
+
+/* Sección general */
+section {
+    background-color: rgba(142, 68, 173, 0.2); /* Fondo morado suave */
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    background-color: #8e44ad; /* Fondo morado más intenso al hacer hover */
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+    cursor: pointer; /* Indicador de interacción */
+}
+
+section h2 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Títulos específicos de las secciones "Experiencia de trabajo en equipo" e "Informática y Hardware" */
+.experiencia-personal h2 {
+    font-size: 45px; /* Aumenta el tamaño del título en esta sección */
+}
+
+.informática-hardware h2 {
+    font-size: 45px; /* Aumenta el tamaño del título en esta sección */
+}
+
+/* Aumentar el tamaño de los textos dentro de las secciones */
+.experiencia-personal p,
+.informática-hardware p {
+    font-size: 28px; /* Aumenta el tamaño del texto en estas secciones */
+    line-height: 1.5; /* Ajusta la altura de la línea para mayor legibilidad */
+}
+
+/* Aumentar el tamaño de los ítems dentro de la lista en la sección "Experiencia Profesional" */
+.experiencia ul li {
+    font-size: 24px; /* Aumenta el tamaño de la lista */
+    line-height: 1.8;
+}
+
+/* Estilo de los ítems */
+.estudio-item {
+    background-color: #ffffff; /* Fondo blanco para los ítems */
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #333; /* Asegura que el texto no cambie a blanco */
+}
+
+.estudio-item:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.estudio-item strong {
+    font-size: 35px;
+    color: #8e44ad; /* Morado */
+    display: block;
+    margin-bottom: 10px;
+   
+}
+
+.estudio-item p {
+    font-size: 35px;
+    color: #333; /* Texto más oscuro para mejorar la legibilidad */
+    
+}
+
+/* Asegura que el color de los textos específicos (fechas, instituciones) se mantengan visibles */
+.estudio-item:hover strong,
+.estudio-item:hover p {
+    color: #333; /* Mantiene el color de texto oscuro cuando pasa el cursor */
+}
+
+/* Estilo adicional para evitar que el fondo se vuelva morado */
+.estudio-item:not(:hover) {
+    background-color: #fff; /* Mantiene el fondo blanco cuando no está en hover */
+    color: #333; /* Color de texto oscuro */
+}
+
+/* Responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .estudio-item {
+        padding: 15px;
+    }
+
+    .estudio-item strong {
+        font-size: 18px;
+    }
+
+    .estudio-item p {
+        font-size: 14px;
+    }
+}
